@@ -8,8 +8,14 @@ def main():
   print('Enter the rainfall for each month.')
   for index in range(len(rain)):
     rain[index]=float(input(f'Month {index+1}:'))
-    rain_total=rain
-    print('The total amount of rain over the year was',rain_total,'inches.')
-    
-
+    total=0
+  for x in rain:  
+    total+=x
+  print('The total amount of rain over the year was',format(total,'.2f'),'inches.')
+  avg=total/12
+  print('The average amount of rain per month was',format(avg,'.2f'),'inches.')
+  most=max(rain)
+  print('The month with the highest amount of rain had',most,'inches.')
+  least=min(rain)
+  print('The month with the least amount of rain had',least,'inches.')
 main()
