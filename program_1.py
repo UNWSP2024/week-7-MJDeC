@@ -14,6 +14,18 @@ def main():
   print('The total amount of rain over the year was',format(total,'.2f'),'inches.')
   avg=total/12
   print('The average amount of rain per month was',format(avg,'.2f'),'inches.')
+  January=[0]
+  February=rain[1]
+  March=rain[2]
+  April=rain[3]
+  May=rain[4]
+  June=rain[5]
+  July=rain[6]
+  August=rain[7]
+  September=rain[8]
+  October=[9]
+  November=[10]
+  December=[11]
   most=max(rain)
   print('The month with the highest amount of rain had',most,'inches.')
   least=min(rain)
