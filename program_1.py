@@ -14,20 +14,56 @@ def main():
   print('The total amount of rain over the year was',format(total,'.2f'),'inches.')
   avg=total/12
   print('The average amount of rain per month was',format(avg,'.2f'),'inches.')
-  January=[0]
-  February=rain[1]
-  March=rain[2]
-  April=rain[3]
-  May=rain[4]
-  June=rain[5]
-  July=rain[6]
-  August=rain[7]
-  September=rain[8]
-  October=[9]
-  November=[10]
-  December=[11]
   most=max(rain)
-  print('The month with the highest amount of rain had',most,'inches.')
+  if most==rain[0]:
+    monthm='January'
+  if most==rain[1]:
+    monthm='February'
+  if most==rain[2]:
+    monthm='March'
+  if most==rain[3]:
+    monthm='April'
+  if most==rain[4]:
+    monthm='May'
+  if most==rain[5]:
+    monthm='June'
+  if most==rain[6]:
+    monthm='July'
+  if most==rain[7]:
+    monthm='August'
+  if most==rain[8]:
+    monthm='September'
+  if most==rain[9]:
+    monthm='October'
+  if most==rain[10]:
+    monthm='November'
+  if most==rain[11]:
+    monthm='December'
   least=min(rain)
-  print('The month with the least amount of rain had',least,'inches.')
+  if least==rain[0]:
+    monthl='January'
+  if least==rain[1]:
+    monthl='February'
+  if least==rain[2]:
+    monthl='March'
+  if least==rain[3]:
+    monthl='April'
+  if least==rain[4]:
+    monthl='May'
+  if least==rain[5]:
+    monthl='June'
+  if least==rain[6]:
+    monthl='July'
+  if least==rain[7]:
+    monthl='August'
+  if least==rain[8]:
+    monthl='September'
+  if least==rain[9]:
+    monthl='October'
+  if least==rain[10]:
+    monthl='November'
+  if least==rain[11]:
+    monthl='December'
+  print('The month with the highest amount of rain was',monthm,'.')
+  print('The month with the least amount of rain was',monthl,'.')
 main()
