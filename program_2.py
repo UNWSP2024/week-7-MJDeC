@@ -32,7 +32,8 @@ def display_larger_than_n_list(n, n_list):
     print('In display_larger_than_n_list')
     n=input(float('Enter a number between 1 and 10.'))
     for x in number_list>n:
-            x=bigger_numbers
+        bigger_numbers=x
+        print(bigger_numbers)
     
 # Call the main function.
 if __name__ == '__main__':
