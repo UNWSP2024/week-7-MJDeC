@@ -7,9 +7,11 @@ def main():
     # [[2010, "Maine", 1987435], [2010,"Minnesota",6873202], [2011, "Iowa", 3421988]]
     all_entered_values = []
     loop='y'
-    if loop=='y':
+    while loop=='y':
         all_entered_values=input('Enter a year, a state, and a population separated by commas.')
         loop=input('Enter y to add more. Else, press another letter key.')
+    else:
+        sum_population_for_year()
         
 
     # Now have the user enter a year. 
@@ -21,10 +23,14 @@ def sum_population_for_year(all_entered_values, year_to_sum):
     # Loop through and sum the populations for the appropriate year. 
     # e.g. for the list on line 7 the total would be 8,860,637 if the user enterd 2010 for the year to sum,
     # or 3,421,988 if they enterd 2011 for the year to sum.
+    year=float(input('Please enter a year to see population for that year.'))
+    for year in all_entered_values:
+        
 
     # print the totalled population
 
 
 # Call the main function.
+
 if __name__ == '__main__':
     main()
