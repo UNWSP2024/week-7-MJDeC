@@ -6,6 +6,11 @@ def main():
     
     # [[2010, "Maine", 1987435], [2010,"Minnesota",6873202], [2011, "Iowa", 3421988]]
     all_entered_values = []
+    loop='y'
+    if loop=='y':
+        all_entered_values=input('Enter a year, a state, and a population separated by commas.')
+        loop=input('Enter y to add more. Else, press another letter key.')
+        
 
     # Now have the user enter a year. 
     
