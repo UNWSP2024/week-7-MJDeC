@@ -8,3 +8,20 @@
 # Also include exception handling to deal with faulty input.
 # The distance between two points (x1,y1,z1) and (x2, y2, z2) is 
 #    given by:   sqrt ((x2-x1)^2 + (y2 - y1)^2 + (z1 - z2)^2) 
+import math
+def main():
+  first_coords=eval(input('Enter the first set of coordinates, separated by commas.'))
+  second_coords=eval(input('Enter the second set of coordinates, separated by commas.'))
+  distance()
+  print(mathiness)
+  
+def distance():
+  first_coords[0]=x1
+  first_coords[1]=y1
+  first_coords[2]=z1
+  second_coords[0]=x2
+  second_coords[1]=y2
+  sescond_coords[2]=z2
+  mathiness=sqrt((x2-x1)^2 +(y2-y1)^2 +(z1-z2)^2)
+
+main()
