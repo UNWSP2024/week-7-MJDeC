@@ -12,10 +12,8 @@ import math
 def main():
   first_coords=eval(input('Enter the first set of three coordinates, separated by commas.'))
   second_coords=eval(input('Enter the second set of three coordinates, separated by commas.'))
-  #if first_coords!=:
-    #print('Please enter valid coords.')
-  #if second_coords!=:
-    #print('Please enter valid coords.')
+  #if:
+  #print('Please enter valid coords.')
   distance()
   print(mathiness)
   
