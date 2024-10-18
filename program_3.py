@@ -23,8 +23,8 @@ def sum_population_for_year(all_entered_values, year_to_sum):
     # Loop through and sum the populations for the appropriate year. 
     # e.g. for the list on line 7 the total would be 8,860,637 if the user enterd 2010 for the year to sum,
     # or 3,421,988 if they enterd 2011 for the year to sum.
-    year=float(input('Please enter a year to see population for that year.'))
-    for year in all_entered_values:
+    year_to_sum=float(input('Please enter a year to see population for that year.'))
+    for year_to_sum in all_entered_values:
         print(all_entered_values)
 
     # print the totalled population
