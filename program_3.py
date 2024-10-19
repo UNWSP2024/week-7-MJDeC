@@ -11,7 +11,7 @@ def main():
         all_entered_values=input('Enter a year, a state, and a population separated by commas.')
         loop=input('Enter y to add more. Else, press another letter key.')
     else:
-        year_to_sum=float(input('Please enter a year to see population for that year.'))
+        year_to_sum=input('Please enter a year to see population for that year.')
         sum_population_for_year(all_entered_values,year_to_sum)
         
 
@@ -26,7 +26,7 @@ def sum_population_for_year(all_entered_values, year_to_sum):
     # or 3,421,988 if they enterd 2011 for the year to sum.
     #year_to_sum=float(input('Please enter a year to see population for that year.'))
     total=0
-    for all_entered_values enumerate(year_to_sum):
+    for all_entered_values, total in enumerate(year_to_sum):
         total=total+all_entered_values
     print(total)
 
