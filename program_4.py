@@ -14,16 +14,16 @@ def main():
   second_coords=eval(input('Enter the second set of three coordinates, separated by commas.'))
   #if:
   #print('Please enter valid coords.')
-  distance()
-  print(mathiness)
+  distance(first_coords, second_coords)
   
 def distance(first_coords, second_coords):
-  first_coords[0]=x1
-  first_coords[1]=y1
-  first_coords[2]=z1
-  second_coords[0]=x2
-  second_coords[1]=y2
-  second_coords[2]=z2
-  mathiness=sqrt((x2-x1)^2 +(y2-y1)^2 +(z1-z2)^2)
+  x1=int(first_coords[0])
+  y1=int(first_coords[1])
+  z1=int(first_coords[2])
+  x2=int(second_coords[0])
+  y2=int(second_coords[1])
+  z2=int(second_coords[2])
+  mathiness=abs((x2-x1)^2 +(y2-y1)^2 +(z1-z2)^2)
+  print(format(math.sqrt(mathiness),'.2f'))
 
 main()
