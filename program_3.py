@@ -26,7 +26,7 @@ def sum_population_for_year(all_entered_values, year_to_sum):
     # or 3,421,988 if they enterd 2011 for the year to sum.
     #year_to_sum=float(input('Please enter a year to see population for that year.'))
     total=0
-    for all_entered_values[year_to_sum]:
+    for all_entered_values enumerate(year_to_sum):
         total=total+all_entered_values
     print(total)
 
