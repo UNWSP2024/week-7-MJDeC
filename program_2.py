@@ -34,6 +34,8 @@ def display_larger_than_n_list(n, n_list):
     x=0
     while x<10:
         bigger_number=x+1>number
+        if x+1>number:
+            print(x+1)
         x=x+1
 # Call the main function.
 if __name__ == '__main__':
